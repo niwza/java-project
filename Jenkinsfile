@@ -87,8 +87,8 @@ pipeline {
                 echo 'Pushing to origin master'
                 sh 'git push origin master'
                 echo 'Tagging the Release'
-                sh "git tag regtangle-${env.MAJOR_VERSION}.${env.BUILD_NUMBER}"
-                sh "git push origin regtangle-${env.MAJOR_VERSION}.${env.BUILD_NUMBER}"
+                sh "git tag rectangle-${env.MAJOR_VERSION}.${env.BUILD_NUMBER}"
+                sh "git push origin rectangle-${env.MAJOR_VERSION}.${env.BUILD_NUMBER}"
             }
         }
     }
